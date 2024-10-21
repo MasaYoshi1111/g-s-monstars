@@ -9,6 +9,7 @@ G's Monstars
 ## ③ アプリのデプロイ URL
 
 デプロイしている場合は URL を記入（任意）
+https://masayoshi1111.github.io/g-s-monstars/boss2.html
 
 ## ④ アプリのログイン用 ID または Password（ある場合）
 
