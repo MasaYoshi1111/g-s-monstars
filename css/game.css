@@ -1,0 +1,135 @@
+#setsumei {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.hukidashi {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px 1.5em 0;
+  padding: 20px 30px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 24px;
+  background: #fff;
+  border: solid 3px #555;
+  box-sizing: border-box;
+}
+
+.hukidashi:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -24px;
+  margin-top: -12px;
+  border: 12px solid transparent;
+  border-left: 12px solid #fff;
+  z-index: 2;
+}
+
+.hukidashi:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  margin-top: -14px;
+  border: 14px solid transparent;
+  border-left: 14px solid #555;
+  z-index: 1;
+}
+
+.hukidashi p {
+  margin: 0;
+  padding: 0;
+}
+
+.hakaseimg {
+  height: 200px;
+}
+
+#monstars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.desk {
+  background-image: url(../img/mokume.jpeg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 250px;
+  border-radius: 25%;
+  width: 1200px;
+  height: 200px;
+}
+
+.ball {
+  padding: 0 50px;
+}
+
+#battle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+}
+
+.stadium {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/stadium.jpg);
+  background-size: cover;
+}
+
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+}
+
+/* モーダルCSS */
+
+.modalArea {
+  display: none;
+  position: fixed;
+  z-index: 10; /*サイトによってここの数値は調整 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modalBg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30, 30, 30, 0.9);
+}
+
+.modalWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 500px;
+  padding: 10px 30px;
+  background-color: #fff;
+}
+
+.modalimg {
+  display: flex;
+  justify-content: center;
+}
+
+.closeModal {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  cursor: pointer;
+}

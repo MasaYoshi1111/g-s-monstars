@@ -1,0 +1,321 @@
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background-color: #fff;
+  background-image: url(../img/back.jpg);
+  /* background-image: url("https://picsum.photos/200"); 仮の画像を入れる */
+  background-size: cover; /* 画像を全体に広げる */
+  background-position: center; /* 画像を中央に配置 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeOut 1.5s 2.5s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.loading__logo {
+  opacity: 0;
+  animation: logo_fade 5s 0.5s forwards;
+  border: solid;
+  border-width: thick;
+  background-color: #fff;
+}
+
+.l1 {
+  font-size: 100px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.l2 {
+  font-size: 70px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.lbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes logo_fade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+* {
+  font-family: 美咲ゴシック;
+  letter-spacing: 0.5px;
+}
+
+body {
+  background-color: beige;
+}
+
+section {
+  margin: 30px auto;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+header {
+  font-size: 24px;
+  border-bottom: thin dashed gray;
+}
+
+.headerbox {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  height: 80px;
+  margin: 0 25px;
+}
+
+.logo {
+  font-size: 40px;
+}
+
+.navibox {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navi {
+  padding: 5px 20px;
+  border: solid;
+}
+
+.mainvisual {
+  background-image: url("../img/back.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 80px 0 30px;
+  text-align: center;
+}
+
+.m1 {
+  font-size: 45px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 8px;
+}
+.m2 {
+  font-size: 20px;
+  letter-spacing: 8px;
+  padding-top: 10px;
+}
+
+img {
+  height: 100px;
+}
+
+#about {
+  padding: 20px 0;
+}
+
+.point1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto;
+}
+
+.point2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px auto;
+}
+
+.migi1 {
+  border: solid;
+  width: 450px;
+  height: 200px;
+  background-image: url(../img/point1.webp);
+  background-position: center;
+  background-size: cover;
+}
+
+.migi2 {
+  border: solid;
+  width: 450px;
+  height: 200px;
+  background-image: url(../img/point2.webp);
+  background-position: unset;
+  background-size: cover;
+}
+
+.hidari {
+  border: solid;
+  width: 450px;
+  height: 200px;
+  display: grid;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+}
+
+img.point {
+  width: auto;
+  height: 200px;
+}
+
+.h2point {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 5px;
+  border-bottom: dotted 3px lightgreen;
+}
+
+h3 {
+  margin: 0 5px;
+}
+
+#play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+button.mainb {
+  font-size: 25px;
+  border: solid;
+  border-radius: 30%;
+  width: 200px;
+  text-align: center;
+  height: 60px;
+}
+
+button.mainb:hover {
+  background-color: lightgreen;
+  opacity: 0.9;
+}
+
+#info {
+  padding: 20px 0;
+}
+
+table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  font-size: 24px;
+  padding: 10px 20px; /* 上下のパディングも設定 */
+  border: 1px solid #000; /* セルの周りに枠線を追加 */
+  text-align: left; /* テキストの位置を左寄せ */
+}
+
+th {
+  font-style: italic;
+}
+
+#contact {
+  padding: 20px 0;
+}
+
+.h1sp {
+  font-size: 14px;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+}
+
+dl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-collapse: collapse;
+}
+
+dt,
+dd {
+  width: 350px;
+  margin-bottom: 10px;
+}
+
+dd {
+  border: solid;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  width: 350px;
+}
+
+.send {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.sendbutton {
+  border: solid;
+  background-color: lightgreen;
+  width: 100px;
+  text-align: center;
+}
+
+footer {
+  border-top: thin dashed gray;
+  margin-top: 20px;
+}
+
+h6 {
+  justify-content: end;
+  display: flex;
+  padding: 5px 10px;
+}

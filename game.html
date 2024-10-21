@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="G's Monstarsは、オリジナルモンスターを育て、シンプルなバトルシステムで戦う新感覚のモンスター育成戦闘ゲームです。"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>G's Monstars</title>
+    <link rel="stylesheet" href="css/destyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/game.css" />
+    <link rel="stylesheet" href="css/boss.css" />
+    <link rel="icon" href="img/favicon.png" id="favicon" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="headerbox">
+        <div class="logo">
+          <a href="index.html">G's Monstars</a>
+        </div>
+        <ul class="navibox">
+          <li class="navi"><a href="index.html#about">ABOUT</a></li>
+          <li class="navi"><a href="index.html#info">INFO</a></li>
+          <div class="navi"><a href="game.html">PLAY</a></div>
+          <li class="navi"><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section id="setsumei">
+        <div class="hukidashi">
+          <h2>よくきたな、未来のチャンピオンよ。</h2>
+          <p>以下の3匹からパートナーとなるモンスターを選ぶのだ</p>
+        </div>
+        <div class="hakase">
+          <img class="hakaseimg" src="img/hakase.png" alt="hakase" />
+        </div>
+      </section>
+
+      <section id="monstars">
+        <div class="desk">
+          <button id="openModal1">
+            <img class="ball" src="img/ball.png" alt="" />
+          </button>
+          <button id="openModal2">
+            <img class="ball" src="img/ball.png" alt="" />
+          </button>
+          <button id="openModal3">
+            <img class="ball" src="img/ball.png" alt="" />
+          </button>
+        </div>
+      </section>
+
+      <!-- モーダルエリアここから -->
+      <section id="modalArea1" class="modalArea">
+        <div id="modalBg" class="modalBg"></div>
+        <div class="modalWrapper">
+          <div class="modalContents">
+            <h1>タイプ：炎</h1>
+            <p>このキャラクターは草タイプに強くて水タイプに弱いぞ！</p>
+            <div class="modalimg"><img src="img/mhitokage.png" alt="" /></div>
+            <button id="hono">>>このモンスターを選びますか</button>
+          </div>
+          <div id="closeModal" class="closeModal">×</div>
+        </div>
+      </section>
+
+      <section id="modalArea2" class="modalArea">
+        <div id="modalBg" class="modalBg"></div>
+        <div class="modalWrapper">
+          <div class="modalContents">
+            <h1>タイプ：水</h1>
+            <p>このキャラクターは炎タイプに強くて草タイプに弱いぞ！</p>
+            <div class="modalimg"><img src="img/mzenigame.png" alt="" /></div>
+            <button id="mizu">>>このモンスターを選びますか</button>
+          </div>
+          <div id="closeModal" class="closeModal">×</div>
+        </div>
+      </section>
+
+      <section id="modalArea3" class="modalArea">
+        <div id="modalBg" class="modalBg"></div>
+        <div class="modalWrapper">
+          <div class="modalContents">
+            <h1>タイプ：草</h1>
+            <p>このキャラクターは水タイプに強くて炎タイプに弱いぞ！</p>
+            <div class="modalimg">
+              <img src="img/mfushigidane.png" alt="" />
+            </div>
+            <button id="kusa">>>このモンスターを選びますか</button>
+          </div>
+          <div id="closeModal" class="closeModal">×</div>
+        </div>
+      </section>
+      <!-- モーダルエリアここまで -->
+    </main>
+
+    <footer>
+      <h6>&copy; G's ACADEMY</h6>
+    </footer>
+  </body>
+  <script src="./js/main.js"></script>
+  <script src="./js/main_jQuery.js"></script>
+  <script src="./js/game.js"></script>
+  <script src="./js/boss.js"></script>
+</html>

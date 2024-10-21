@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="G's Monstarsは、オリジナルモンスターを育て、シンプルなバトルシステムで戦う新感覚のモンスター育成戦闘ゲームです。"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>G's Monstars</title>
+    <link rel="stylesheet" href="css/destyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/game.css" />
+    <link rel="stylesheet" href="css/boss.css" />
+
+    <link rel="icon" href="img/favicon.png" id="favicon" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="headerbox">
+        <div class="logo">
+          <a href="index.html">G's Monstars</a>
+        </div>
+        <ul class="navibox">
+          <li class="navi"><a href="index.html#about">ABOUT</a></li>
+          <li class="navi"><a href="index.html#info">INFO</a></li>
+          <div class="navi"><a href="game.html">PLAY</a></div>
+          <li class="navi"><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section id="battle">
+        <h2 class="h2b">ボス戦</h2>
+        <div class="monsters">
+          <img
+            src="img/mfire.png"
+            alt="Boss Monster"
+            id="bossMonster"
+            class="monster"
+          />
+          <img
+            src="img/mzenigame.png"
+            alt="Hitokage"
+            id="hitokage"
+            class="monster"
+          />
+        </div>
+        <div class="buttons">
+          <button id="rockBtn" class="button">
+            <img src="img/jg.png" alt="グー" />
+          </button>
+          <button id="scissorsBtn" class="button">
+            <img src="img/jc.png" alt="チョキ" />
+          </button>
+          <button id="paperBtn" class="button">
+            <img src="img/jp.png" alt="パー" />
+          </button>
+        </div>
+        <div class="status">
+          <p>ボスのHP: <span id="bossHp">50</span></p>
+          <p>あなたのHP: <span id="playerHp">50</span></p>
+        </div>
+        <div id="result"></div>
+        <div id="battleResult"></div>
+        <!-- 結果表示用の要素を追加 -->
+      </section>
+    </main>
+    <footer>
+      <h6>&copy; G's ACADEMY</h6>
+    </footer>
+  </body>
+  <script src="./js/main.js"></script>
+  <script src="./js/main_jQuery.js"></script>
+  <script src="./js/game.js"></script>
+  <script src="./js/boss.js"></script>
+</html>

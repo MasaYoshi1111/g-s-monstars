@@ -1,0 +1,34 @@
+main {
+  padding: 20px;
+}
+#battle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.monsters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.monsters img {
+  max-width: 150px;
+  margin: 20px;
+}
+.buttons {
+  margin-top: 20px;
+}
+.button img {
+  width: auto;
+  height: 100px;
+}
+.status {
+  margin-top: 20px;
+}
+
+.h2b {
+  font-size: x-large;
+  font-weight: bold;
+  padding: 20px;
+}

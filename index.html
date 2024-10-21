@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="G's Monstarsは、オリジナルモンスターを育て、シンプルなバトルシステムで戦う新感覚のモンスター育成戦闘ゲームです。"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>G's Monstars</title>
+    <link rel="stylesheet" href="css/destyle.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/game.css" />
+    <link rel="stylesheet" href="css/boss.css" />
+    <link rel="icon" href="img/favicon.png" id="favicon" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body>
+    <!-- 最初にローディングを表示させる -->
+    <div class="loading">
+      <div class="loading__logo">
+        <h1 class="l1">G's Monstars</h1>
+        <div class="lbox">
+          <h2 class="l2">NOW LOADING</h2>
+        </div>
+      </div>
+    </div>
+
+    <header>
+      <div class="headerbox">
+        <div class="logo">
+          <a href="index.html">G's Monstars</a>
+        </div>
+        <ul class="navibox">
+          <li class="navi"><a href="#about">ABOUT</a></li>
+          <li class="navi"><a href="#info">INFO</a></li>
+          <div class="navi"><a href="game.html">PLAY</a></div>
+          <li class="navi"><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="mainvisual">
+      <h1 class="m1">セカイを変えるギークモンスターを</h1>
+      <h2 class="m2">モンスター育成戦闘ゲーム「G's Monstars」</h2>
+      <section id="play">
+        <button class="mainb" onclick="buttonclick()">PLAY</button>
+      </section>
+    </div>
+
+    <main>
+      <section id="about">
+        <h1>ABOUT</h1>
+        <div class="point1">
+          <div class="hidari">
+            <h2 class="h2point">パートナーモンスターで戦おう</h2>
+            <h3>
+              冒険の始まりに、３匹のモンスターから一匹を選び、自分だけのオリジナルモンスターを育てよう。タイプは炎、水、草の３種類。相手とのバトルでは、このタイプの相性が勝敗を左右するぞ。モンスターを育てて、進化させながら最強のパートナーにしよう！
+            </h3>
+          </div>
+          <div class="migi1"></div>
+        </div>
+        <div class="point2">
+          <div class="hidari">
+            <h2 class="h2point">シンプルなバトルシステム</h2>
+            <h3>
+              バトルのルールは簡単だ。相手のモンスターのタイプに対して自分のモンスターのタイプが優位に立てば勝利だ。毎回ランダムに変わる対戦相手との戦いで、君の戦略とモンスターの強さを試してみよう。たくさん戦って最強のモンスター使いを目指せ！
+            </h3>
+          </div>
+          <div class="migi2"></div>
+        </div>
+      </section>
+
+      <section id="play">
+        <button class="mainb" onclick="buttonclick()">PLAY</button>
+      </section>
+
+      <section id="info">
+        <h1>INFO</h1>
+        <table>
+          <tr>
+            <th>タイトル</th>
+            <td>G's Monstars（仮）</td>
+          </tr>
+          <tr>
+            <th>リリース/発売日</th>
+            <td>2024/10/22 モニター募集開始</td>
+          </tr>
+          <tr>
+            <th>価格</th>
+            <td>先着100名はモニターとして無料プレイ可能</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="contact">
+        <h1>CONTACT</h1>
+        <h1 class="h1sp">※無料モニター応募はこちらからご応募お願いします。</h1>
+        <div class="form">
+          <form action="" method="">
+            <dl>
+              <dt><label for="name">お名前</label></dt>
+              <dd>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="門巣田 定魔"
+                  required
+                />
+              </dd>
+            </dl>
+            <dl>
+              <dt><label for="mail">メールアドレス</label></dt>
+              <dd>
+                <input
+                  type="email"
+                  id="mail"
+                  name="mail"
+                  placeholder="sample@gsmonstars.com"
+                  required
+                />
+              </dd>
+            </dl>
+            <dl>
+              <dt><label>モニターのご経験</label></dt>
+              <dd>
+                <select name="experience" id="experience" class="experience">
+                  <option>▼選択してください</option>
+                  <option>・0~1年の経験</option>
+                  <option>・1~3年の経験</option>
+                  <option>・3年以上の経験</option>
+                </select>
+              </dd>
+            </dl>
+            <dl>
+              <dt>備考</dt>
+              <dd>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="ご質問などございましたらこちらに内容をお書きくださいませ。"
+                ></textarea>
+              </dd>
+            </dl>
+          </form>
+        </div>
+        <div class="send">
+          <div class="sendbutton">送信する</div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h6>&copy; G's ACADEMY</h6>
+    </footer>
+  </body>
+  <script src="./js/main.js"></script>
+  <script src="./js/main_jQuery.js"></script>
+  <script src="./js/game.js"></script>
+  <script src="./js/boss.js"></script>
+</html>
